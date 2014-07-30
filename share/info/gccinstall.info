@@ -2266,9 +2266,7 @@ information collected.
 
    Unlike standard bootstrap, several additional restrictions apply.
 The compiler used to build 'stage1' needs to support a 64-bit integral
-type.  It is recommended to only use GCC for this.  Also parallel make
-is currently not supported since collisions in profile collecting may
-occur.
+type.  It is recommended to only use GCC for this.
 
 
 File: gccinstall.info,  Node: Testing,  Next: Final install,  Prev: Building,  Up: Installing GCC
@@ -2604,10 +2602,6 @@ makers.
    * SCO OpenServer/Unixware.
 
    * Solaris 2 (SPARC, Intel):
-        * Sunfreeware
-
-        * Blastwave
-
         * OpenCSW
 
         * TGCware
@@ -3085,9 +3079,9 @@ the system libunwind library will always be used.
 aarch64*-*-*
 ============
 
-Pre 2.24 binutils does not have support for selecting -mabi and does not
-support ILP32.  If GCC 4.9 or later is built with pre 2.24, GCC will not
-support option -mabi=ilp32.
+Binutils pre 2.24 does not have support for selecting '-mabi' and does
+not support ILP32.  If it is used to build GCC 4.9 or later, GCC will
+not support option '-mabi=ilp32'.
 
 *-ibm-aix*
 ==========
@@ -4589,91 +4583,91 @@ Ref: with-gnu-as32585
 Ref: with-as33480
 Ref: with-gnu-ld34893
 Node: Building84585
-Node: Testing100052
-Node: Final install107914
-Node: Binaries113225
-Node: Specific114733
-Ref: alpha-x-x115240
-Ref: alpha-dec-osf51115729
-Ref: amd64-x-solaris210116254
-Ref: arc-x-elf32116357
-Ref: arc-linux-uclibc116533
-Ref: arm-x-eabi116674
-Ref: avr116885
-Ref: bfin117524
-Ref: cr16117765
-Ref: cris118181
-Ref: dos118996
-Ref: epiphany-x-elf119319
-Ref: x-x-freebsd119424
-Ref: h8300-hms121260
-Ref: hppa-hp-hpux121612
-Ref: hppa-hp-hpux10123984
-Ref: hppa-hp-hpux11124397
-Ref: x-x-linux-gnu130056
-Ref: ix86-x-linux130249
-Ref: ix86-x-solaris29130562
-Ref: ix86-x-solaris210131341
-Ref: ia64-x-linux132532
-Ref: ia64-x-hpux133302
-Ref: aarch64-x-x133857
-Ref: x-ibm-aix134059
-Ref: iq2000-x-elf140922
-Ref: lm32-x-elf141062
-Ref: lm32-x-uclinux141166
-Ref: m32c-x-elf141294
-Ref: m32r-x-elf141396
-Ref: m68k-x-x141498
-Ref: m68k-x-uclinux142536
-Ref: mep-x-elf142781
-Ref: microblaze-x-elf142891
-Ref: mips-x-x143010
-Ref: mips-sgi-irix5145404
-Ref: mips-sgi-irix6145484
-Ref: moxie-x-elf145671
-Ref: msp430-x-elf145718
-Ref: nds32le-x-elf145821
-Ref: nds32be-x-elf145893
-Ref: powerpc-x-x145962
-Ref: powerpc-x-darwin146167
-Ref: powerpc-x-elf146661
-Ref: powerpc-x-linux-gnu146746
-Ref: powerpc-x-netbsd146841
-Ref: powerpc-x-eabisim146929
-Ref: powerpc-x-eabi147055
-Ref: powerpcle-x-elf147131
-Ref: powerpcle-x-eabisim147223
-Ref: powerpcle-x-eabi147356
-Ref: rl78-x-elf147439
-Ref: rx-x-elf147545
-Ref: s390-x-linux147744
-Ref: s390x-x-linux147816
-Ref: s390x-ibm-tpf147903
-Ref: x-x-solaris2148034
-Ref: sparc-x-x152955
-Ref: sparc-sun-solaris2153457
-Ref: sparc-sun-solaris210156210
-Ref: sparc-x-linux156585
-Ref: sparc64-x-solaris2156810
-Ref: sparcv9-x-solaris2157463
-Ref: c6x-x-x157550
-Ref: tilegx-*-linux157642
-Ref: tilegxbe-*-linux157784
-Ref: tilepro-*-linux157927
-Ref: x-x-vxworks158048
-Ref: x86-64-x-x159571
-Ref: x86-64-x-solaris210159899
-Ref: xtensa-x-elf160561
-Ref: xtensa-x-linux161232
-Ref: windows161573
-Ref: x-x-cygwin163506
-Ref: x-x-interix164059
-Ref: x-x-mingw32164367
-Ref: older164593
-Ref: elf166710
-Node: Old166968
-Node: Configurations170101
-Node: GNU Free Documentation License173639
-Node: Concept Index198767
+Node: Testing99955
+Node: Final install107817
+Node: Binaries113128
+Node: Specific114592
+Ref: alpha-x-x115099
+Ref: alpha-dec-osf51115588
+Ref: amd64-x-solaris210116113
+Ref: arc-x-elf32116216
+Ref: arc-linux-uclibc116392
+Ref: arm-x-eabi116533
+Ref: avr116744
+Ref: bfin117383
+Ref: cr16117624
+Ref: cris118040
+Ref: dos118855
+Ref: epiphany-x-elf119178
+Ref: x-x-freebsd119283
+Ref: h8300-hms121119
+Ref: hppa-hp-hpux121471
+Ref: hppa-hp-hpux10123843
+Ref: hppa-hp-hpux11124256
+Ref: x-x-linux-gnu129915
+Ref: ix86-x-linux130108
+Ref: ix86-x-solaris29130421
+Ref: ix86-x-solaris210131200
+Ref: ia64-x-linux132391
+Ref: ia64-x-hpux133161
+Ref: aarch64-x-x133716
+Ref: x-ibm-aix133919
+Ref: iq2000-x-elf140782
+Ref: lm32-x-elf140922
+Ref: lm32-x-uclinux141026
+Ref: m32c-x-elf141154
+Ref: m32r-x-elf141256
+Ref: m68k-x-x141358
+Ref: m68k-x-uclinux142396
+Ref: mep-x-elf142641
+Ref: microblaze-x-elf142751
+Ref: mips-x-x142870
+Ref: mips-sgi-irix5145264
+Ref: mips-sgi-irix6145344
+Ref: moxie-x-elf145531
+Ref: msp430-x-elf145578
+Ref: nds32le-x-elf145681
+Ref: nds32be-x-elf145753
+Ref: powerpc-x-x145822
+Ref: powerpc-x-darwin146027
+Ref: powerpc-x-elf146521
+Ref: powerpc-x-linux-gnu146606
+Ref: powerpc-x-netbsd146701
+Ref: powerpc-x-eabisim146789
+Ref: powerpc-x-eabi146915
+Ref: powerpcle-x-elf146991
+Ref: powerpcle-x-eabisim147083
+Ref: powerpcle-x-eabi147216
+Ref: rl78-x-elf147299
+Ref: rx-x-elf147405
+Ref: s390-x-linux147604
+Ref: s390x-x-linux147676
+Ref: s390x-ibm-tpf147763
+Ref: x-x-solaris2147894
+Ref: sparc-x-x152815
+Ref: sparc-sun-solaris2153317
+Ref: sparc-sun-solaris210156070
+Ref: sparc-x-linux156445
+Ref: sparc64-x-solaris2156670
+Ref: sparcv9-x-solaris2157323
+Ref: c6x-x-x157410
+Ref: tilegx-*-linux157502
+Ref: tilegxbe-*-linux157644
+Ref: tilepro-*-linux157787
+Ref: x-x-vxworks157908
+Ref: x86-64-x-x159431
+Ref: x86-64-x-solaris210159759
+Ref: xtensa-x-elf160421
+Ref: xtensa-x-linux161092
+Ref: windows161433
+Ref: x-x-cygwin163366
+Ref: x-x-interix163919
+Ref: x-x-mingw32164227
+Ref: older164453
+Ref: elf166570
+Node: Old166828
+Node: Configurations169961
+Node: GNU Free Documentation License173499
+Node: Concept Index198627
 
 End Tag Table

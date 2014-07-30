@@ -2,8 +2,7 @@ This is gprof.info, produced by makeinfo version 5.2 from gprof.texi.
 
 This file documents the gprof profiler of the GNU system.
 
-   Copyright (C) 1988, 1992, 1997, 1998, 1999, 2000, 2001, 2003, 2007,
-2008, 2009 Free Software Foundation, Inc.
+   Copyright (C) 1988-2014 Free Software Foundation, Inc.
 
    Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version 1.3 or
@@ -28,8 +27,8 @@ to determine which parts of a program are taking most of the execution
 time.  We assume that you know how to write, compile, and execute
 programs.  GNU 'gprof' was written by Jay Fenlason.
 
-   This manual is for 'gprof' (SaberMod-4.10.0_android-graphite) version
-2.24.0.
+   This manual is for 'gprof' (SaberMod-4.9.2_android-graphite) version
+2.24.51.
 
    This document is distributed under the terms of the GNU Free
 Documentation License version 1.3.  A copy of the license is included in
@@ -526,6 +525,11 @@ File: gprof.info,  Node: Analysis Options,  Next: Miscellaneous Options,  Prev: 
      significantly increases the running time of 'gprof', and magnifies
      statistical inaccuracies.  *Note Statistical Sampling Error:
      Sampling Error.
+
+'--inline-file-names'
+     This option causes 'gprof' to print the source file after each
+     symbol in both the flat profile and the call graph.  The full path
+     to the file is printed if used with the '-L' option.
 
 '-m NUM'
 '--min-count=NUM'
@@ -2421,35 +2425,35 @@ their use in free software.
 
 
 Tag Table:
-Node: Top774
-Node: Introduction2119
-Node: Compiling4610
-Node: Executing8666
-Node: Invoking11454
-Node: Output Options12869
-Node: Analysis Options19961
-Node: Miscellaneous Options23660
-Node: Deprecated Options24914
-Node: Symspecs26977
-Node: Output28803
-Node: Flat Profile29843
-Node: Call Graph34796
-Node: Primary38028
-Node: Callers40616
-Node: Subroutines42734
-Node: Cycles44575
-Node: Line-by-line51352
-Node: Annotated Source55428
-Node: Inaccuracy58426
-Node: Sampling Error58684
-Node: Assumptions61588
-Node: How do I?63058
-Node: Incompatibilities64615
-Node: Details66109
-Node: Implementation66502
-Node: File Format72401
-Node: Internals76689
-Node: Debugging85179
-Node: GNU Free Documentation License86769
+Node: Top719
+Node: Introduction2064
+Node: Compiling4555
+Node: Executing8611
+Node: Invoking11399
+Node: Output Options12814
+Node: Analysis Options19906
+Node: Miscellaneous Options23826
+Node: Deprecated Options25080
+Node: Symspecs27143
+Node: Output28969
+Node: Flat Profile30009
+Node: Call Graph34962
+Node: Primary38194
+Node: Callers40782
+Node: Subroutines42900
+Node: Cycles44741
+Node: Line-by-line51518
+Node: Annotated Source55594
+Node: Inaccuracy58592
+Node: Sampling Error58850
+Node: Assumptions61754
+Node: How do I?63224
+Node: Incompatibilities64781
+Node: Details66275
+Node: Implementation66668
+Node: File Format72567
+Node: Internals76855
+Node: Debugging85345
+Node: GNU Free Documentation License86935
 
 End Tag Table
