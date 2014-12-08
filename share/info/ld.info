@@ -1,6 +1,6 @@
 This is ld.info, produced by makeinfo version 5.2 from ld.texinfo.
 
-This file documents the GNU linker LD (SaberMod-4.9.2_android-graphite)
+This file documents the GNU linker LD (SaberMod-4.9.x_android-graphite)
 version 2.24.51.
 
    Copyright (C) 1991-2014 Free Software Foundation, Inc.
@@ -22,7 +22,7 @@ File: ld.info,  Node: Top,  Next: Overview,  Up: (dir)
 LD
 **
 
-This file documents the GNU linker ld (SaberMod-4.9.2_android-graphite)
+This file documents the GNU linker ld (SaberMod-4.9.x_android-graphite)
 version 2.24.51.
 
    This document is distributed under the terms of the GNU Free
